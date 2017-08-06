@@ -7,8 +7,8 @@ public class Resposta6 {
 	 * 	As classes abstratas são classes que servem como modelos a serem seguidos por classes que herdem dela,
 	 * 	e não podem ser estanciadas. Os métodos da classe abstrata devem ser sobrescritos nas classes filhas.
 	 * 	
-	 * 	Devemos usar interfaces quando diferentes classes 
-	 * 	
+	 * 	Devemos usar interfaces quando diferentes classes tem métodos em comum e classes abstratas quando além de implementar
+	 * 	alguns métodos também acesse os métodos da classe asbtrata.
 	 * 
 	 */
 
