@@ -45,7 +45,7 @@ public class Poligono {
 			double soma = (coordenadaX[i] * coordenadaY[i+1]) - (coordenadaX[i+1] * coordenadaY[i]);
 			area+=soma;
 		}
-		area/=2;
+		area=area/2;
 		return area;
 	}
 	
