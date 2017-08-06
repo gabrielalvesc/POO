@@ -1,4 +1,4 @@
-package com.ufpb.poo;
+package com.ufpb.questao1;
 
 public class Retangulo {
 	
