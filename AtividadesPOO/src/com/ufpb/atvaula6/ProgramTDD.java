@@ -44,7 +44,9 @@ public class ProgramTDD {
 		int diferenca = 0;
 		if (totalMinFim<totalMinInicio){
 			diferenca = (1440 - totalMinInicio)+totalMinFim;
-		} else {
+		} else if (totalMinFim==totalMinInicio) {
+			diferenca = 1440;
+		}else {
 			diferenca = totalMinFim - totalMinInicio; 
 		}
 		int horas = diferenca/60;

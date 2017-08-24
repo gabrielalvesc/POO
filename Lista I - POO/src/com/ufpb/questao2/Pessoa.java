@@ -71,13 +71,13 @@ public class Pessoa {
 	public String toString(){
 		Double imc = calculaImc(this.peso, this.altura);
 		if (imc <= 18.5){
-			return this.nome+" é uma pessoa do sexo "+this.sexo+" e está abaixo do seu peso normal.";
+			return this.nome+" é uma pessoa do sexo "+this.sexo+" e está abaixo do seu peso normal. IMC: "+imc;
 		} else if (18.5 < imc && imc <= 25.0){
-			return this.nome+" é uma pessoa do sexo "+this.sexo+" e está com seu peso normal.";
+			return this.nome+" é uma pessoa do sexo "+this.sexo+" e está com seu peso normal. IMC: "+imc;
 		} else if (25.0 < imc && imc <= 30.0){
-			return this.nome+" é uma pessoa do sexo "+this.sexo+" e está acima do peso normal.";
+			return this.nome+" é uma pessoa do sexo "+this.sexo+" e está acima do peso normal. IMC: "+imc;
 		} else {
-			return this.nome+" é uma pessoa do sexo "+this.sexo+" e está com obesidade.";
+			return this.nome+" é uma pessoa do sexo "+this.sexo+" e está com obesidade. IMC: "+imc;
 		}
 		 
 	}
