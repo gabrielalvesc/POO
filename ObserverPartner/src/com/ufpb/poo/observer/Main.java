@@ -14,7 +14,7 @@ public class Main {
 		a3.setNome("Kewyn");
 		a3.setCpf("678901234-56");
 		Pessoa a4 = new Pessoa();
-		a4.setNome("Kuririn");
+		a4.setNome("Danilo");
 		a4.setCpf("765498376-09");
 		
 		Editora editora = new Editora();
