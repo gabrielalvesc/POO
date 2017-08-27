@@ -9,30 +9,21 @@ public class Main {
 		System.out.println("***** BATALHA *****");
 		System.out.println(l1.getNome()+" VS "+l2.getNome());
 		
-		int rodada = 0;
-		
-		while (l1.getLife()!=0 || l2.getLife() !=0){
-			rodada++;
-			System.out.println("Rodada "+rodada);
-			if (l1.getLife()==0){
-				System.out.println(l2.getNome()+" WINS!!!");
+		while (l1.getLife()!=0 || l2.getLife()!=0){
+			l1.atacar(l2);
+			System.out.println(l1.getNome()+" ataca "+l2.getNome());
+			System.out.println(l1.toString()+"\n"+l2.toString()+"\n");
+			if (l2.getLife()==0){
+				System.out.println(l2.getNome()+" IS DEAD!!! :("+"\n"+l1.getNome()+" VENCE A BATALHA!!! *-*");
 				break;
-			} else if (l2.getLife()==0){
-				System.out.println(l1.getNome()+" WINS!!!");
-				break;
-			} else {
-				System.out.println(l1.getNome()+" ataca "+l2.getNome());
-				l1.atacar(l2);
-				l2.defender();
-				System.out.println("LIFE "+l2.getNome()+": "+l2.getLife());
-				System.out.println("LIFE "+l1.getNome()+": "+l1.getLife());
-				System.out.println(l2.getNome()+" ataca "+l1.getNome());
-				l2.atacar(l1);
-				l1.defender();
-				System.out.println("LIFE "+l2.getNome()+": "+l2.getLife());
-				System.out.println("LIFE "+l1.getNome()+": "+l1.getLife());
 			}
-			
+			l2.atacar(l1);
+			System.out.println(l2.getNome()+" ataca "+l1.getNome());
+			System.out.println(l1.toString()+"\n"+l2.toString()+"\n");
+			if (l1.getLife()==0){
+				System.out.println(l1.getNome()+" IS DEAD!!! :("+"\n"+l2.getNome()+" VENCE A BATALHA!!! *-*");
+				break;
+			}
 		}
 		
 	}

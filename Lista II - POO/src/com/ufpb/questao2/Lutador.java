@@ -19,15 +19,17 @@ public class Lutador {
 	}
 
 	public void setLife(int life) {
-		this.life = life;
+		if (life <= 0){
+			this.life = 0;
+		} else if (life >= 100) {
+			this.life = 100;
+		} else {
+			this.life = life;
+		}
 	}
 	
 	public void atacar(Lutador l){
-		l.setLife(l.getLife() + this.ataque.atacar());
-	}
-	
-	public void defender(){
-		this.setLife(this.getLife() + this.defesa.defender());
+		l.setLife(l.getLife() + (this.ataque.atacar()+l.defesa.defender()));
 	}
 
 	public String getNome() {
@@ -42,6 +44,8 @@ public class Lutador {
 		return this.defesa;
 	}
 	
-	
+	public String toString(){
+		return "Gurreiro: "+this.nome+"\n"+"Life: "+this.life;
+	}
 
 }
