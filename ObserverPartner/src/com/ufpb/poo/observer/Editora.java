@@ -35,8 +35,8 @@ public class Editora implements Subject{
 
 	@Override
 	public void notifyObservers(String s) {
+		System.out.println("Notificando...");
 		for (Observer o: this.observers){
-			System.out.println("Notificando...");
 			o.update(s);
 		}
 	}
