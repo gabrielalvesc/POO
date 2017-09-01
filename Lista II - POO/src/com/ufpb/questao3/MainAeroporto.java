@@ -35,7 +35,6 @@ public class MainAeroporto {
 		
 		for (Observer o: aeroporto.getTotens()){
 			JOptionPane.showMessageDialog(null, o.toString());
-			//System.out.println(o.toString());
 		}
 		
 		aeroporto.removeObserver(totenGeral);
@@ -44,8 +43,6 @@ public class MainAeroporto {
 		for (Observer o: aeroporto.getTotens()){
 			JOptionPane.showMessageDialog(null, o.toString());
 		}
-		
-		aeroporto.removeObserver(totenDesembarque);
 		
 	}	
 }

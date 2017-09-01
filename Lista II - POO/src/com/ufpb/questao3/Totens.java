@@ -66,33 +66,5 @@ public class Totens implements Observer{
 		} 
 		return str;
 	}
-	
-//	public String totenEmbarque(){
-//		String str = "***** TOTEN EMBARQUE *****\n\n";
-//		for (Voo v : this.voosEmbarque) {
-//			str+=v.toString();
-//		}
-//		return str;
-//	}
-//	
-//	public String totenDesembarque(){
-//		String str = "***** TOTEN DESEMBARQUE *****\n\n";
-//		for (Voo v : this.voosDesembarque) {
-//			str+=v.toString();
-//		}
-//		return str;
-//	}
-//	
-//	public String totenGeral(){
-//		String str = "***** TOTEN EMBARQUE/DESEMBARQUE *****\n\n";
-//		for (Voo v : this.voosEmbarque) {
-//			str+=v.toString();
-//		}
-//		for (Voo v : this.voosDesembarque) {
-//			str+=v.toString();
-//		}
-//		return str;
-	
-	
 
 }
