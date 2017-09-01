@@ -42,5 +42,7 @@ public class MainAeroporto {
 			System.out.println(o.toString());
 		}
 		
+		aeroporto.removeObserver(totenDesembarque);
+		
 	}	
 }
