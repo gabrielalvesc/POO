@@ -1,5 +1,7 @@
 package com.ufpb.questao3;
 
+import javax.swing.JOptionPane;
+
 public class MainAeroporto {
 
 	public static void main(String[] args) {
@@ -32,14 +34,15 @@ public class MainAeroporto {
 		aeroporto.notify(vooAmerican);
 		
 		for (Observer o: aeroporto.getTotens()){
-			System.out.println(o.toString());
+			JOptionPane.showMessageDialog(null, o.toString());
+			//System.out.println(o.toString());
 		}
 		
 		aeroporto.removeObserver(totenGeral);
 		aeroporto.removeObserver(totenEmbarque);
 		
 		for (Observer o: aeroporto.getTotens()){
-			System.out.println(o.toString());
+			JOptionPane.showMessageDialog(null, o.toString());
 		}
 		
 		aeroporto.removeObserver(totenDesembarque);
