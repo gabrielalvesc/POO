@@ -1,0 +1,2 @@
+Façade: Interface unificada para as interfaces de subsistema. É usado quando deseja uma interface simples para sistemas mais complexos. É um padrão do tipo estrutural porque ele oferece uma comunicação estrutural entre o cliente e as interfaces do subsistema através da fachada. É implementado da seguinte forma: A fachado como classe central pois ele é a ponte que liga o cliente das classes do subsistema.
+

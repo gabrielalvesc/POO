@@ -1,0 +1,8 @@
+Padrão Strategy: O padrão strategy usa o principio da verificação separando os comportamentos que são mutáveis dos que são imutáveis. Ainda usa outro principio que é o de usar composição ao invés de herança.
+
+Padrão Observer: Utiliza o principio de um-para-muitos entre os objetos para qua quando o estado de um objeto mude de estado todos os que dependam dele sejam avisados e atualizados automaticamente.
+
+Padrão Decorator: Utiliza o principio aberto-fechado, ou seja, aberto para extensão e fechado para alteração. E usa também o principio de utilizar composição ao invés de herança e juntos eles compõem objetos de forma dinâmica sendo possível adicionar novas funcionalidades através da criação de um novo código no lugar de alterar o já existente.
+
+Padrão Façade: O façade fornece uma interface unificada para o conjunto de interfaces do subsistema, encapsulando as complexidades do mesmo.
+
