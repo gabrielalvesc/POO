@@ -1,0 +1,7 @@
+a) Converte a interface de uma classe para outra interface que o cliente espera encontrar permitindo que classes com interfaces imcompativeis trabalhem juntas.
+
+b)Quando deseja que duas interfaces que iniciamente não são compativeis, se tornem compativeis.
+
+c) Object Adapter - O cliente vê apenas a interface alvo, a classe Adapter implementa a interface alvo e é composto com os adaptaveis.
+
+Class Adapter - É implementado como heranã multipla, ou seja,  a classe ClassAdapter extends uma classe e implemente as outras.
