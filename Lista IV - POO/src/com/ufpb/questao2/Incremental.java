@@ -12,7 +12,11 @@ public class Incremental implements Runnable{
 	
 	public static Incremental getInstance(){
 		if (uniqueInstance==null){
-			uniqueInstance = new Incremental();
+			synchronized (Incremental.class) {
+				if (uniqueInstance==null){
+					uniqueInstance = new Incremental();
+				}
+			}
 		}
 		return uniqueInstance;
 	}

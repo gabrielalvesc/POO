@@ -1,0 +1,12 @@
+a) O Singleton garante que uma classe tenha apenas uma instância e fornece um ponto de acesso global a ela
+
+b) Quando você deseja que determinada classe só seja instancida uma única vez. Muito usado em Banco de Dados para fazer a conexão do programa com o BD.
+
+c)A estrutura do padrão Singleton é muito simples, na classe Singleton existe uma variável estática (uniqueInstance) para garantir que a classe seja apenas instanciada uma única vez. Também tem getInstance que retorna a instancia que o inicializou.
+
+d) Sincronizando o getInstance - A desvantagem desse método é que diminui o desempenho do programa por um fator de 100. Se o desempenho do getInstance não for crítico para sua aplicação, ele pode servir como saída para esse problema.
+
+Eager Initialization - Útil se você sabe que seu programa sempre cria e usa uma instância Singleton. O construtor é chamado quando a classe é carregada.
+
+Trava Duplamente verificada - Diminui o overhead imposto pela sincronização entre as threads.
+
